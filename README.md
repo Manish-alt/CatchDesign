@@ -4,7 +4,7 @@
 ### Guidelines
 
 1. To run the project you need the latest Xcode.
-2. After you clone on unzip the folder, open the folder.
+2. After you clone or unzip the folder, open the folder.
 3. Please double click on 'CatchDesignTest.xcodeproj' and Xcode will open.
 4. Please wait while Xcode builds then select the simulator and you can click play button on the top left of Xcode.
 5. This app is written in Swift, including using SwiftUI and Combine.
