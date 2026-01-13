@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30D5DA4635C5B154316306DE /* Pods_CatchDesignTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3567A5C9E7E92511928F969 /* Pods_CatchDesignTests.framework */; };
+		4745A76FDEA1D4256DDABE41 /* Pods_CatchDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E21010B2AF0D5AD622B66C /* Pods_CatchDesign.framework */; };
+		739B5EE198DB063E3D09BB42 /* Pods_CatchDesign_CatchDesignUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E75247C2A59622BCEB4C29C /* Pods_CatchDesign_CatchDesignUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD3366FC2F149C9000DC24CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD3366DD2F149C8D00DC24CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD3366E42F149C8D00DC24CC;
+			remoteInfo = CatchDesign;
+		};
+		CD3367062F149C9000DC24CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD3366DD2F149C8D00DC24CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD3366E42F149C8D00DC24CC;
+			remoteInfo = CatchDesign;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B293DA2DE4BE115617161DC /* Pods-CatchDesign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatchDesign.debug.xcconfig"; path = "Target Support Files/Pods-CatchDesign/Pods-CatchDesign.debug.xcconfig"; sourceTree = "<group>"; };
+		3E75247C2A59622BCEB4C29C /* Pods_CatchDesign_CatchDesignUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatchDesign_CatchDesignUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		743A712975301859D7351228 /* Pods-CatchDesignTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatchDesignTests.debug.xcconfig"; path = "Target Support Files/Pods-CatchDesignTests/Pods-CatchDesignTests.debug.xcconfig"; sourceTree = "<group>"; };
+		75E21010B2AF0D5AD622B66C /* Pods_CatchDesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatchDesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77F0ACF3CD884C050C9E729F /* Pods-CatchDesignTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatchDesignTests.release.xcconfig"; path = "Target Support Files/Pods-CatchDesignTests/Pods-CatchDesignTests.release.xcconfig"; sourceTree = "<group>"; };
+		A3567A5C9E7E92511928F969 /* Pods_CatchDesignTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatchDesignTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFBC56E55448BD57BAB0F625 /* Pods-CatchDesign-CatchDesignUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatchDesign-CatchDesignUITests.debug.xcconfig"; path = "Target Support Files/Pods-CatchDesign-CatchDesignUITests/Pods-CatchDesign-CatchDesignUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD3366E52F149C8D00DC24CC /* CatchDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatchDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD3366FB2F149C9000DC24CC /* CatchDesignTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatchDesignTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD3367052F149C9000DC24CC /* CatchDesignUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatchDesignUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0163BE1C9AC7A8F7E3097FC /* Pods-CatchDesign.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatchDesign.release.xcconfig"; path = "Target Support Files/Pods-CatchDesign/Pods-CatchDesign.release.xcconfig"; sourceTree = "<group>"; };
+		FA4B23A3A9FA08768C92BC1B /* Pods-CatchDesign-CatchDesignUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatchDesign-CatchDesignUITests.release.xcconfig"; path = "Target Support Files/Pods-CatchDesign-CatchDesignUITests/Pods-CatchDesign-CatchDesignUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CD33670D2F149C9000DC24CC /* Exceptions for "CatchDesign" folder in "CatchDesign" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CD3366E42F149C8D00DC24CC /* CatchDesign */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CD3366E72F149C8D00DC24CC /* CatchDesign */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CD33670D2F149C9000DC24CC /* Exceptions for "CatchDesign" folder in "CatchDesign" target */,
+			);
+			path = CatchDesign;
+			sourceTree = "<group>";
+		};
+		CD3366FE2F149C9000DC24CC /* CatchDesignTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CatchDesignTests;
+			sourceTree = "<group>";
+		};
+		CD3367082F149C9000DC24CC /* CatchDesignUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CatchDesignUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD3366E22F149C8D00DC24CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4745A76FDEA1D4256DDABE41 /* Pods_CatchDesign.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD3366F82F149C9000DC24CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D5DA4635C5B154316306DE /* Pods_CatchDesignTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD3367022F149C9000DC24CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739B5EE198DB063E3D09BB42 /* Pods_CatchDesign_CatchDesignUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD3366DC2F149C8D00DC24CC = {
+			isa = PBXGroup;
+			children = (
+				CD3366E72F149C8D00DC24CC /* CatchDesign */,
+				CD3366FE2F149C9000DC24CC /* CatchDesignTests */,
+				CD3367082F149C9000DC24CC /* CatchDesignUITests */,
+				CD3366E62F149C8D00DC24CC /* Products */,
+				F3BE89812B4A8914BE7BEBC0 /* Pods */,
+				E9B766BE39D419D6B5DADDA5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CD3366E62F149C8D00DC24CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD3366E52F149C8D00DC24CC /* CatchDesign.app */,
+				CD3366FB2F149C9000DC24CC /* CatchDesignTests.xctest */,
+				CD3367052F149C9000DC24CC /* CatchDesignUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9B766BE39D419D6B5DADDA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75E21010B2AF0D5AD622B66C /* Pods_CatchDesign.framework */,
+				3E75247C2A59622BCEB4C29C /* Pods_CatchDesign_CatchDesignUITests.framework */,
+				A3567A5C9E7E92511928F969 /* Pods_CatchDesignTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3BE89812B4A8914BE7BEBC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B293DA2DE4BE115617161DC /* Pods-CatchDesign.debug.xcconfig */,
+				D0163BE1C9AC7A8F7E3097FC /* Pods-CatchDesign.release.xcconfig */,
+				AFBC56E55448BD57BAB0F625 /* Pods-CatchDesign-CatchDesignUITests.debug.xcconfig */,
+				FA4B23A3A9FA08768C92BC1B /* Pods-CatchDesign-CatchDesignUITests.release.xcconfig */,
+				743A712975301859D7351228 /* Pods-CatchDesignTests.debug.xcconfig */,
+				77F0ACF3CD884C050C9E729F /* Pods-CatchDesignTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD3366E42F149C8D00DC24CC /* CatchDesign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD33670E2F149C9000DC24CC /* Build configuration list for PBXNativeTarget "CatchDesign" */;
+			buildPhases = (
+				4561A277AAF406D3F516B73C /* [CP] Check Pods Manifest.lock */,
+				CD3366E12F149C8D00DC24CC /* Sources */,
+				CD3366E22F149C8D00DC24CC /* Frameworks */,
+				CD3366E32F149C8D00DC24CC /* Resources */,
+				2954AEDBF14CA51230A60130 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CD3366E72F149C8D00DC24CC /* CatchDesign */,
+			);
+			name = CatchDesign;
+			productName = CatchDesign;
+			productReference = CD3366E52F149C8D00DC24CC /* CatchDesign.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD3366FA2F149C9000DC24CC /* CatchDesignTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD3367132F149C9000DC24CC /* Build configuration list for PBXNativeTarget "CatchDesignTests" */;
+			buildPhases = (
+				A18B26B35BD83A1114A567C2 /* [CP] Check Pods Manifest.lock */,
+				CD3366F72F149C9000DC24CC /* Sources */,
+				CD3366F82F149C9000DC24CC /* Frameworks */,
+				CD3366F92F149C9000DC24CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD3366FD2F149C9000DC24CC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CD3366FE2F149C9000DC24CC /* CatchDesignTests */,
+			);
+			name = CatchDesignTests;
+			productName = CatchDesignTests;
+			productReference = CD3366FB2F149C9000DC24CC /* CatchDesignTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD3367042F149C9000DC24CC /* CatchDesignUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD3367162F149C9000DC24CC /* Build configuration list for PBXNativeTarget "CatchDesignUITests" */;
+			buildPhases = (
+				F1FE153956F3F0C8F7FE426E /* [CP] Check Pods Manifest.lock */,
+				CD3367012F149C9000DC24CC /* Sources */,
+				CD3367022F149C9000DC24CC /* Frameworks */,
+				CD3367032F149C9000DC24CC /* Resources */,
+				3060E086B7A2DD631CD97956 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD3367072F149C9000DC24CC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CD3367082F149C9000DC24CC /* CatchDesignUITests */,
+			);
+			name = CatchDesignUITests;
+			productName = CatchDesignUITests;
+			productReference = CD3367052F149C9000DC24CC /* CatchDesignUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD3366DD2F149C8D00DC24CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					CD3366E42F149C8D00DC24CC = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					CD3366FA2F149C9000DC24CC = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = CD3366E42F149C8D00DC24CC;
+					};
+					CD3367042F149C9000DC24CC = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = CD3366E42F149C8D00DC24CC;
+					};
+				};
+			};
+			buildConfigurationList = CD3366E02F149C8D00DC24CC /* Build configuration list for PBXProject "CatchDesign" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD3366DC2F149C8D00DC24CC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CD3366E62F149C8D00DC24CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD3366E42F149C8D00DC24CC /* CatchDesign */,
+				CD3366FA2F149C9000DC24CC /* CatchDesignTests */,
+				CD3367042F149C9000DC24CC /* CatchDesignUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD3366E32F149C8D00DC24CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD3366F92F149C9000DC24CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD3367032F149C9000DC24CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2954AEDBF14CA51230A60130 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CatchDesign/Pods-CatchDesign-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CatchDesign/Pods-CatchDesign-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CatchDesign/Pods-CatchDesign-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3060E086B7A2DD631CD97956 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CatchDesign-CatchDesignUITests/Pods-CatchDesign-CatchDesignUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CatchDesign-CatchDesignUITests/Pods-CatchDesign-CatchDesignUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CatchDesign-CatchDesignUITests/Pods-CatchDesign-CatchDesignUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4561A277AAF406D3F516B73C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CatchDesign-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A18B26B35BD83A1114A567C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CatchDesignTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1FE153956F3F0C8F7FE426E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CatchDesign-CatchDesignUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD3366E12F149C8D00DC24CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD3366F72F149C9000DC24CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD3367012F149C9000DC24CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD3366FD2F149C9000DC24CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD3366E42F149C8D00DC24CC /* CatchDesign */;
+			targetProxy = CD3366FC2F149C9000DC24CC /* PBXContainerItemProxy */;
+		};
+		CD3367072F149C9000DC24CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD3366E42F149C8D00DC24CC /* CatchDesign */;
+			targetProxy = CD3367062F149C9000DC24CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CD33670F2F149C9000DC24CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B293DA2DE4BE115617161DC /* Pods-CatchDesign.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 28R6NB6DC5;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CatchDesign/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.catchnz.com.CatchDesign;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD3367102F149C9000DC24CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0163BE1C9AC7A8F7E3097FC /* Pods-CatchDesign.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 28R6NB6DC5;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CatchDesign/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.catchnz.com.CatchDesign;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD3367112F149C9000DC24CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD3367122F149C9000DC24CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD3367142F149C9000DC24CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 743A712975301859D7351228 /* Pods-CatchDesignTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.catchnz.com.CatchDesignTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatchDesign.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CatchDesign";
+			};
+			name = Debug;
+		};
+		CD3367152F149C9000DC24CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77F0ACF3CD884C050C9E729F /* Pods-CatchDesignTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.catchnz.com.CatchDesignTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatchDesign.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CatchDesign";
+			};
+			name = Release;
+		};
+		CD3367172F149C9000DC24CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFBC56E55448BD57BAB0F625 /* Pods-CatchDesign-CatchDesignUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.catchnz.com.CatchDesignUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CatchDesign;
+			};
+			name = Debug;
+		};
+		CD3367182F149C9000DC24CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA4B23A3A9FA08768C92BC1B /* Pods-CatchDesign-CatchDesignUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.catchnz.com.CatchDesignUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CatchDesign;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD3366E02F149C8D00DC24CC /* Build configuration list for PBXProject "CatchDesign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD3367112F149C9000DC24CC /* Debug */,
+				CD3367122F149C9000DC24CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD33670E2F149C9000DC24CC /* Build configuration list for PBXNativeTarget "CatchDesign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD33670F2F149C9000DC24CC /* Debug */,
+				CD3367102F149C9000DC24CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD3367132F149C9000DC24CC /* Build configuration list for PBXNativeTarget "CatchDesignTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD3367142F149C9000DC24CC /* Debug */,
+				CD3367152F149C9000DC24CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD3367162F149C9000DC24CC /* Build configuration list for PBXNativeTarget "CatchDesignUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD3367172F149C9000DC24CC /* Debug */,
+				CD3367182F149C9000DC24CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD3366DD2F149C8D00DC24CC /* Project object */;
+}

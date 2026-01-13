@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="Y6W-OH-hqX" customClass="DetailViewController" customModule="CatchDesign" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLM-Dy-olM">
+                                <rect key="frame" x="0.0" y="118" width="393" height="734"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wY1-EH-Xbv">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="734"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jdhfajkshdfkjhasdjfhjkashdfkjhasjkdfhjkahsdjkhajshfjkashdfjkhajskdfhjkashdfkjhasjdfhajshfdkahsdf" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbo-XY-a2n">
+                                                <rect key="frame" x="20" y="16" width="353" height="61"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="wbo-XY-a2n" firstAttribute="height" relation="lessThanOrEqual" secondItem="wY1-EH-Xbv" secondAttribute="height" multiplier="0.841962" id="8EN-xe-hjg"/>
+                                            <constraint firstItem="wbo-XY-a2n" firstAttribute="top" secondItem="wY1-EH-Xbv" secondAttribute="top" constant="16" id="EzY-G6-52d"/>
+                                            <constraint firstItem="wbo-XY-a2n" firstAttribute="leading" secondItem="wY1-EH-Xbv" secondAttribute="leading" constant="20" symbolic="YES" id="bou-mH-XK9"/>
+                                            <constraint firstAttribute="trailing" secondItem="wbo-XY-a2n" secondAttribute="trailing" constant="20" symbolic="YES" id="t96-JQ-eaq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="wY1-EH-Xbv" firstAttribute="leading" secondItem="cLM-Dy-olM" secondAttribute="leading" id="00L-JT-VHK"/>
+                                    <constraint firstItem="wY1-EH-Xbv" firstAttribute="bottom" secondItem="cLM-Dy-olM" secondAttribute="bottom" id="S8l-lP-pyz"/>
+                                    <constraint firstItem="wY1-EH-Xbv" firstAttribute="trailing" secondItem="cLM-Dy-olM" secondAttribute="trailing" id="WaS-km-ZhX"/>
+                                    <constraint firstItem="wY1-EH-Xbv" firstAttribute="top" secondItem="cLM-Dy-olM" secondAttribute="top" id="wSG-dq-4Ck"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="SecondaryBackground"/>
+                        <constraints>
+                            <constraint firstItem="wY1-EH-Xbv" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.861502" id="BEv-HR-CA0"/>
+                            <constraint firstAttribute="bottom" secondItem="cLM-Dy-olM" secondAttribute="bottom" id="Emx-VS-kji"/>
+                            <constraint firstItem="wY1-EH-Xbv" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="Qre-HB-xmo"/>
+                            <constraint firstItem="cLM-Dy-olM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="eDy-mX-eSn"/>
+                            <constraint firstItem="cLM-Dy-olM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ewr-lI-lGw"/>
+                            <constraint firstItem="cLM-Dy-olM" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="v0m-S1-I6s"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblDescription" destination="wbo-XY-a2n" id="05j-Xc-cmN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75.572519083969468" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="SecondaryBackground">
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
