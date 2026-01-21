@@ -6,22 +6,34 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.interaction.MutableInteractionSource
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowLeft
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
@@ -30,12 +42,16 @@ import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavController
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
 import com.example.catchdesign.R
 import com.example.catchdesign.model.ResponseModel
 import com.example.catchdesign.ui.route.Route
@@ -72,8 +88,22 @@ fun MainScreen(viewModel: MainViewModel = getViewModel()) {
                     )
                 }
 
-                composable(Route.DetailScreen.route) {
+                composable(
+                    route = Route.DetailScreen.route,
+                    arguments = listOf(
+                        navArgument("title") { type = NavType.StringType },
+                        navArgument("content") { type = NavType.StringType }
+                    )
+                ) { backStackEntry ->
+                    // Extract the strings from the navigation arguments
+                    val title = backStackEntry.arguments?.getString("title") ?: ""
+                    val content = backStackEntry.arguments?.getString("content") ?: ""
 
+                    DetailScreen(
+                        title = title,
+                        content = content,
+                        onBackClick = { navController.popBackStack() }
+                    )
                 }
             }
     }
@@ -98,9 +128,10 @@ fun ListView(
                         ListViewRow (
                             data = state.users[item],
                             onClick = {
-                                navController.navigate(Route.DetailScreen.route)
+                                navController.navigate(Route.DetailScreen.createRoute(title = state.users[item].title.toString(), content = state.users[item].content.toString()))
                             }
                         )
+                        HorizontalDivider(modifier = Modifier.padding(horizontal = 16.dp))
                     }
                 }
             }
@@ -191,8 +222,94 @@ fun CircularProgressRing(
 }
 
 
-@Composable
-fun DetailScreen(){
+    @OptIn(ExperimentalMaterial3Api::class)
+    @Composable
+    fun DetailScreen(
+        title: String,
+        content: String,
+        onBackClick: () -> Unit
+    ) {
+        Scaffold(
+            topBar = {
+                CustomNavigationBar(
+                    title = title,
+                    onBackClick = onBackClick
+                )
+            }
+        ) { innerPadding ->
+            Column(
+                modifier = Modifier
+                    .padding(innerPadding)
+                    .fillMaxSize()
+            ) {
+                HorizontalDivider(thickness = 1.dp, color = Color.LightGray)
 
+                Column(
+                    modifier = Modifier
+                        .verticalScroll(rememberScrollState())
+                        .padding(20.dp)
+                        .fillMaxWidth()
+                ) {
+                    Text(
+                        text = content,
+                        style = MaterialTheme.typography.bodyLarge,
+                        lineHeight = 24.sp, // Equivalent to lineSpacing(4)
+                        color = MaterialTheme.colorScheme.onBackground
+                    )
+                }
+            }
+        }
+    }
+
+@Composable
+fun CustomNavigationBar(
+    title: String,
+    onBackClick: () -> Unit
+) {
+    Box(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(44.dp) // Standard iOS/Android bar height
+            .background(MaterialTheme.colorScheme.surface),
+        contentAlignment = Alignment.Center
+    ) {
+        // Centered Title
+        Text(
+            text = title,
+            style = MaterialTheme.typography.titleMedium.copy(fontWeight = FontWeight.Bold)
+        )
+
+        // Left-aligned Back Button
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(start = 16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Row(
+                modifier = Modifier
+                    .clickable(
+                        interactionSource = remember { MutableInteractionSource() },
+                        indication = null, // Removes ripple to mimic iOS feel
+                        onClick = onBackClick
+                    ),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(5.dp)
+            ) {
+                Icon(
+                    imageVector = Icons.AutoMirrored.Filled.KeyboardArrowLeft,
+                    contentDescription = "Back",
+                    tint = Color(0xFF070932), // Your custom hex color
+                    modifier = Modifier.size(24.dp)
+                )
+                Text(
+                    text = "Back",
+                    style = MaterialTheme.typography.bodyLarge,
+                    color = Color(0xFF070932)
+                )
+            }
+            Spacer(modifier = Modifier.weight(1f))
+        }
+    }
 }
 

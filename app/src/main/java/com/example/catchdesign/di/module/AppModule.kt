@@ -1,7 +1,7 @@
 package com.example.catchdesign.di.module
 
 
-import com.example.catchdesign.network.KtorClientProvider
+import com.example.catchdesign.di.network.KtorClientProvider
 import com.example.catchdesign.repository.MainRepository
 import com.example.catchdesign.di.service.ApiService
 import com.example.catchdesign.viewModel.MainViewModel
