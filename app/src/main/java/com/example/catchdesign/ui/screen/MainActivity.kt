@@ -30,6 +30,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.pulltorefresh.PullToRefreshBox
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -84,7 +85,9 @@ fun MainScreen(viewModel: MainViewModel = getViewModel()) {
             NavHost(navController = navController, startDestination = Route.ListScreen.route) {
                 composable(Route.ListScreen.route) {
                     ListView(
-                        state, navController = navController
+                        viewModel,
+                        state,
+                        navController = navController
                     )
                 }
 
@@ -112,10 +115,11 @@ fun MainScreen(viewModel: MainViewModel = getViewModel()) {
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ListView(
+    viewModel: MainViewModel,
     state: MainUiState,
     navController: NavController
 ) {
-
+    val isRefreshing = (state as? MainUiState.Success)?.isRefreshing ?: false
     Box(modifier = Modifier.fillMaxSize()) {
         when (state){
             is MainUiState.Loading -> {
@@ -123,15 +127,29 @@ fun ListView(
             }
 
             is MainUiState.Success -> {
-                LazyColumn {
-                    items(state.users.size) { item ->
-                        ListViewRow (
-                            data = state.users[item],
-                            onClick = {
-                                navController.navigate(Route.DetailScreen.createRoute(title = state.users[item].title.toString(), content = state.users[item].content.toString()))
-                            }
-                        )
-                        HorizontalDivider(modifier = Modifier.padding(horizontal = 16.dp))
+                PullToRefreshBox(
+                    isRefreshing = isRefreshing,
+                    onRefresh = {
+                        // This triggers your ViewModel fetch
+                        viewModel.loadUsers()
+                    },
+                    modifier = Modifier.fillMaxSize()
+                ) {
+                    LazyColumn {
+                        items(state.users.size) { item ->
+                            ListViewRow(
+                                data = state.users[item],
+                                onClick = {
+                                    navController.navigate(
+                                        Route.DetailScreen.createRoute(
+                                            title = state.users[item].title.toString(),
+                                            content = state.users[item].content.toString()
+                                        )
+                                    )
+                                }
+                            )
+                            HorizontalDivider(modifier = Modifier.padding(horizontal = 16.dp))
+                        }
                     }
                 }
             }

@@ -21,13 +21,17 @@ class MainViewModel(private val repository: MainRepository) : ViewModel() {
 
     init { loadUsers() }
     fun loadUsers() = viewModelScope.launch {
-        if (_uiState.value !is MainUiState.Success) {
-            _uiState.value = MainUiState.Loading
+        _uiState.update { currentState ->
+            if (currentState is MainUiState.Success) {
+                currentState.copy(isRefreshing = true)
+            } else {
+                MainUiState.Loading
+            }
         }
 
         try {
             val users = repository.fetchUsers()
-            _uiState.value = MainUiState.Success(users = users)
+            _uiState.value = MainUiState.Success(users = users, isRefreshing = false)
         } catch (e: Exception) {
             _uiState.value = MainUiState.Error(
                 ErrorState(message = e.localizedMessage ?: "Unknown Error", throwable = e)
